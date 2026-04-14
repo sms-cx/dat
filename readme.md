@@ -9,7 +9,7 @@ Houdini > radial_menu_display_options.py
 A pie menu to toggle the different display options (e.g. Display points, Display point normals, etc.). It also works 
 with custom markers. 
 
-![Screenshot showing the display options pie menu]((https://raw.githubusercontent.com/sms-cx/dat/main/.github/images/screenshot_display_piemenu.png))  
+![Screenshot showing the display options pie menu](https://raw.githubusercontent.com/sms-cx/dat/main/.github/images/screenshot_display_piemenu.png)  
 
 ### Installation:
 
