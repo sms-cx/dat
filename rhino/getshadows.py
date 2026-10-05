@@ -6,7 +6,7 @@ I do not know who created the initial version.
 copyright 2026 Simon Trapp
 """
 
-# Version 1.4
+# Version 1.3
 
 import System
 import Rhino
