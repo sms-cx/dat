@@ -1,6 +1,5 @@
 """
 Houdini Radial Menu – Viewport Display Toggles
-================================================
 
 This is a radial menu for Houdini to give a faster access to the variety of display options.
 Install: Edit > Radial Menus > New
@@ -8,11 +7,13 @@ Install: Edit > Radial Menus > New
 copyright 2026 Simon Trapp
 """
 
+# Version 1.1
+
 
 import hou
 
 
-# ── Helper: get the DisplayModel display set from the pane ───────────
+# Helper: get the DisplayModel display set from the pane
 
 def _get_display_set(pane):
     """Return the DisplayModel GeometryViewportDisplaySet."""
@@ -21,7 +22,7 @@ def _get_display_set(pane):
     return settings.displaySet(hou.displaySetType.DisplayModel)
 
 
-# ── Toggle functions ─────────────────────────────────────────────────
+# Toggle functions
 # Each receives **kwargs from the radial menu system.
 # kwargs["pane"] is the SceneViewer pane tab.
 
@@ -49,7 +50,7 @@ def toggle_prim_numbers(**kwargs):
     ds = _get_display_set(kwargs["pane"])
     ds.showPrimNumbers(not ds.isShowingPrimNumbers())
 
-# ── Check functions (return True if ON) ──────────────────────────────
+# Check functions (return True if ON)
 
 def check_point_markers(**kwargs):
     return _get_display_set(kwargs["pane"]).isShowingPointMarkers()
@@ -70,7 +71,7 @@ def check_prim_numbers(**kwargs):
     return _get_display_set(kwargs["pane"]).isShowingPrimNumbers()
 
 
-# ── Visualizer submenu (dynamically lists node visualizers) ──────────
+# Visualizer submenu (dynamically lists node visualizers)
 
 def _get_selected_node():
     selected = hou.selectedNodes()
@@ -188,7 +189,7 @@ def build_visualizer_submenu(**kwargs):
     _build_viz_page(vizs, page=0, **kwargs)
 
 
-# ── Build the radial menu ───────────────────────────────────────────
+# Build the radial menu
 
 menu = {
     "n": {

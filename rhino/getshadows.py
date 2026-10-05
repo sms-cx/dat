@@ -1,4 +1,12 @@
 #! python 3
+"""
+I didn't create the original script, this is the update to work in python 3 and remove some quirks of the original.
+I do not know who created the initial version.
+
+copyright 2026 Simon Trapp
+"""
+
+# Version 1.4
 
 import System
 import Rhino
