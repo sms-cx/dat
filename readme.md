@@ -11,6 +11,9 @@ Rhino > getshadows.py
 ```
 A script to create vector shadows based on the sun/a direction in rhino.
 
+![Screenshot showing a shadow example in rhino](https://raw.githubusercontent.com/sms-cx/dat/main/.github/images/shadows_example_01.png)  
+
+! Requires Rhino 9, as it's written in python 3.
 
 ## Houdini
 ```
