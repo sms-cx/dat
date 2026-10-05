@@ -7,7 +7,7 @@ Install: Edit > Radial Menus > New
 copyright 2026 Simon Trapp
 """
 
-# Version 1.1
+# Version 1.0
 
 
 import hou
